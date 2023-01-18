@@ -1,0 +1,31 @@
+@model skill_test.Models.User.User
+@{
+    ViewData["Title"] = "Update Page";
+}
+<a asp-action="Index">Back to list</a>
+<div class="text-center">
+    <h2>Update page</h2>
+    <form method="post">
+        <p>
+            <label asp-for="FirstName">First Name:</label>
+            <input asp-for="FirstName" />
+            <span asp-validation-for="FirstName"></span>
+        </p>
+        <p>
+            <label asp-for="LastName">last Name:</label>
+            <input asp-for="LastName" />
+            <span asp-validation-for="LastName"></span>
+        </p>
+        <p>
+            <label asp-for="Email">Email:</label>
+            <input asp-for="Email" />
+            <span asp-validation-for="Email"></span>
+        </p>
+         <p>
+            <label asp-for="Password">Password:</label>
+            <input asp-for="Password" />
+            <span asp-validation-for="Password"></span>
+        </p>
+    <p><button type="submit">Submit</button></p>
+    </form>
+</div>
