@@ -33,3 +33,6 @@ D:\PERSONAL FILES\LEARNING PROJECTS\.NET CORE\MVC\skill_test\obj\Debug\net6.0\sk
 D:\PERSONAL FILES\LEARNING PROJECTS\.NET CORE\MVC\skill_test\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 D:\PERSONAL FILES\LEARNING PROJECTS\.NET CORE\MVC\skill_test\bin\Debug\net6.0\MySqlConnector.dll
 D:\PERSONAL FILES\LEARNING PROJECTS\.NET CORE\MVC\skill_test\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\PERSONAL FILES\LEARNING PROJECTS\.NET CORE\MVC\skill_test\bin\Debug\net6.0\MailKit.dll
+D:\PERSONAL FILES\LEARNING PROJECTS\.NET CORE\MVC\skill_test\bin\Debug\net6.0\MimeKit.dll
+D:\PERSONAL FILES\LEARNING PROJECTS\.NET CORE\MVC\skill_test\bin\Debug\net6.0\BouncyCastle.Crypto.dll

@@ -1,4 +1,3 @@
-using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Mvc;
 using skill_test.Interfaces;
 using skill_test.Models.User;
@@ -8,10 +7,12 @@ namespace skill_test.Controllers;
 public class UserController : Controller
 {
     private readonly IUser _userService;
+    private readonly ISmtp _smtpService;
 
-    public UserController(IUser userService)
+    public UserController(IUser userService, ISmtp smtpService)
     {
         _userService = userService;
+        _smtpService = smtpService;
     }
 
     public async Task<IActionResult> Index()
@@ -31,6 +32,7 @@ public class UserController : Controller
         {
             if (userData == null) return BadRequest();
             await _userService.Create(userData);
+            _smtpService.SendMail(userData.LastName, userData.Email);
         }
         catch (Exception)
         {

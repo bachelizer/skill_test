@@ -8,49 +8,49 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = skill_test
 build_property.RootNamespace = skill_test
-build_property.ProjectDir = d:\PERSONAL FILES\LEARNING PROJECTS\.NET CORE\MVC\skill_test\
+build_property.ProjectDir = D:\PERSONAL FILES\LEARNING PROJECTS\.NET CORE\MVC\skill_test\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\PERSONAL FILES\LEARNING PROJECTS\.NET CORE\MVC\skill_test
+build_property.MSBuildProjectDirectory = D:\PERSONAL FILES\LEARNING PROJECTS\.NET CORE\MVC\skill_test
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/Home/Index.cshtml]
+[D:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/Login/LoginPage.cshtml]
+[D:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/Login/LoginPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW5QYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/Shared/Error.cshtml]
+[D:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/User/Create.cshtml]
+[D:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/User/Index.cshtml]
+[D:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/User/Update.cshtml]
+[D:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/User/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/_ViewImports.cshtml]
+[D:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/_ViewStart.cshtml]
+[D:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/Shared/_Layout.cshtml]
+[D:/PERSONAL FILES/LEARNING PROJECTS/.NET CORE/MVC/skill_test/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0hfgebh0sg

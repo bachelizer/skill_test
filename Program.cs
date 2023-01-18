@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using skill_test.DataContext;
 using skill_test.Interfaces;
+using skill_test.Models.Settings;
 using skill_test.Services.LoginServices;
+using skill_test.Services.Smtp;
 using skill_test.Services.UserService;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,9 @@ var builder = WebApplication.CreateBuilder(args);
     var services = builder.Services;
     services.AddScoped<IUser, UserServices>();
     services.AddScoped<ILogin, LoginServices>();
+    services.AddScoped<ISmtp, SmtpServices>();
+
+    services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
 
     services.AddDbContext<skill_set_dbContext>(options => options.UseMySql("server=localhost;user=root;password=dummy;database=skill_set_db", Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.1.9-mariadb")));
     // Add services to the container.
