@@ -3,7 +3,12 @@
     ViewData["Title"] = "User Page";
 }
 
-<a asp-action="Create">Create</a>
+<div class="row">
+    <div class="d-flex justify-content-between">
+        <a class="text-left" asp-action="Create">Create</a>
+        <a class="text-right" asp-action="LoginPage" asp-controller="Login">Logout</a>
+    </div>
+</div>
 <div class="text-center">
    <div>
      <table class="table table-hover">
@@ -28,11 +33,11 @@
                     <td> @Html.DisplayFor(modelItem => item.Email)</td>
                    <td class="row">
                     <div class="col">
-                         <a asp-action="Update" class="btn btn-outline-primary"  asp-route-Id ="@item.Id">Edit</a>
+                         <a asp-action="Update" class="btn btn-outline-primary btn-sm"  asp-route-Id ="@item.Id">Edit</a>
                     </div>
                     <div class="col">
                         <form asp-route-Id ="@item.Id" method="post" asp-action="Destroy">
-                            <button class="btn btn-outline-primary" type="submit">Delete</button>
+                            <button class="btn btn-outline-danger btn-sm" type="submit">Delete</button>
                         </form>
                     </div>
                 </td>

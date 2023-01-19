@@ -14,6 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
     services.AddScoped<ISmtp, SmtpServices>();
 
     services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
+    services.Configure<DbContextSetting>(builder.Configuration.GetSection("DbContextSetting"));
 
     services.AddDbContext<skill_set_dbContext>(options => options.UseMySql("server=localhost;user=root;password=dummy;database=skill_set_db", Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.1.9-mariadb")));
     // Add services to the container.

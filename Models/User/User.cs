@@ -12,6 +12,7 @@ public class User
     [Display(Name = "Last Name")]
     public string LastName { get; set; } = null!;
     [Required]
+    [EmailAddress(ErrorMessage = "The email address is not valid")]
     [Display(Name = "Email")]
     public string Email { get; set; } = null!;
     [Required]

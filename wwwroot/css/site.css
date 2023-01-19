@@ -16,3 +16,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.alert-validation-error {
+  font-size: 11px;
+  color: rgb(212, 68, 68);
+}

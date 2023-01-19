@@ -24,8 +24,6 @@ public class LoginController : Controller
 
         var userAccount = await _loginService.AuthUser(email, password);
         if (userAccount is not null)  return RedirectToAction("Index", "Home", userAccount);
-      
-        return View("LoginPage");
-
+        return Json("Invalid Account");
     }
 }

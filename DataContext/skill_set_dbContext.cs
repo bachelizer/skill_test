@@ -2,19 +2,20 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Extensions.Options;
+using skill_test.Models.Settings;
 using skill_test.Models.User;
 
 namespace skill_test.DataContext
 {
     public partial class skill_set_dbContext : DbContext
     {
-        public skill_set_dbContext()
-        {
-        }
+        private readonly DbContextSetting _dbContext;
 
-        public skill_set_dbContext(DbContextOptions<skill_set_dbContext> options)
+        public skill_set_dbContext(DbContextOptions<skill_set_dbContext> options, IOptions<DbContextSetting> dbContext)
             : base(options)
         {
+              _dbContext = dbContext.Value;
         }
 
         public virtual DbSet<User>? Users { get; set; }
@@ -24,7 +25,7 @@ namespace skill_test.DataContext
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseMySql("server=localhost;user=root;password=dummy;database=skill_set_db", Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.1.9-mariadb"));
+                optionsBuilder.UseMySql(_dbContext.ConnectionString, Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.1.9-mariadb"));
             }
         }
 

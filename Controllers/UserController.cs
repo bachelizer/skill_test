@@ -28,6 +28,10 @@ public class UserController : Controller
     [HttpPost]
     public async Task<IActionResult> Create(User userData)
     {
+        if (!ModelState.IsValid)
+        {
+            return View(userData);
+        }
         try
         {
             if (userData == null) return BadRequest();
@@ -39,6 +43,7 @@ public class UserController : Controller
             throw;
         }
         return RedirectToAction("Index");
+
     }
     public async Task<IActionResult> Update(string Id)
     {
@@ -49,6 +54,10 @@ public class UserController : Controller
     [HttpPost]
     public async Task<IActionResult> Update(User userData)
     {
+        if(!ModelState.IsValid)
+        {
+            return View(userData);
+        }
         try
         {
             await _userService.Update(userData);
